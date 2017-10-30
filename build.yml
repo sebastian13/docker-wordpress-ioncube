@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  apache:
+    build:
+      context: .
+      dockerfile: wordpress-ioncube_7.1-apache
+    image: plocek/wordpress-ioncube:7.1-apache
