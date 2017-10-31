@@ -1,5 +1,9 @@
-FROM wordpress:php7.1-apache
-ENV PHP_VER '7.1'
+ARG PHP_VER=7.1
+FROM wordpress:php${PHP_VER}-apache
+MAINTAINER Sebastian Plocek <sebastian@plocek.at>
+
+ARG PHP_VER
+RUN echo $PHP_VER
 
 # Increase Upload and Memory Limit
 RUN echo "file_uploads = On\n" \
