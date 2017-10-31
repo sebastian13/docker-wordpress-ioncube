@@ -3,7 +3,6 @@ FROM wordpress:php${PHP_VER}-apache
 MAINTAINER Sebastian Plocek <sebastian@plocek.at>
 
 ARG PHP_VER
-RUN echo $PHP_VER
 
 # Increase Upload and Memory Limit
 RUN echo "file_uploads = On\n" \
