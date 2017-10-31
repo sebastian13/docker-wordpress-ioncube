@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  wordpress-ioncube:
+    build:
+      context: .
+      args:
+        PHP_VER: 7.1
+    image: plocek/wordpress-ioncube:7.1-apache
